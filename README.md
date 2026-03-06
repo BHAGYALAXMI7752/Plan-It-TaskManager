@@ -1,7 +1,7 @@
 
 # PlanIt Task Manager
 
-A clean, fully responsive task management web application built with vanilla HTML, CSS, and JavaScript. PlanIt helps you organize your daily tasks with features like adding, editing, deleting, searching, filtering, and even dragging to reorder. All data is saved in your browser's local storage, so your tasks persist even after refreshing the page.
+A clean, fully responsive task management web application built with HTML, CSS, and JavaScript. PlanIt helps you organize your daily tasks with features like adding, editing, deleting, searching, filtering, and even dragging to reorder. All data is saved in your browser's local storage, so your tasks persist even after refreshing the page.
 
 ## Features
 
