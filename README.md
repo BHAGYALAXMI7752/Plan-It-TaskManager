@@ -1,8 +1,4 @@
-Here's a clean, properly formatted `README.md` file for your **PlanIt Task Manager**. Just copy and paste this content into your `README.md` file – it will display correctly on GitHub and any Markdown viewer.
 
----
-
-```markdown
 # PlanIt Task Manager
 
 A clean, fully responsive task management web application built with vanilla HTML, CSS, and JavaScript. PlanIt helps you organize your daily tasks with features like adding, editing, deleting, searching, filtering, and even dragging to reorder. All data is saved in your browser's local storage, so your tasks persist even after refreshing the page.
