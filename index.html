@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+  <title>Plan-It | Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="task-container">
+    <!-- header with dark mode -->
+    <div class="header-row">
+      <h1>📋 Plan-It</h1>
+      <button class="dark-toggle" id="darkToggle">Dark</button>
+    </div>
+
+    <!-- add / edit form -->
+    <div class="form-card" id="taskForm">
+      <div class="field-group">
+        <label>Title *</label>
+        <input type="text" id="titleInput" placeholder="e.g., buy groceries" autocomplete="off">
+      </div>
+      <div class="field-group">
+        <label>Description</label>
+        <textarea id="descInput" placeholder="description"></textarea>
+      </div>
+      <div class="field-group">
+        <label>Due Date</label>
+        <input type="date" id="dateInput">
+      </div>
+      <div class="field-group">
+        <label>Priority</label>
+        <select id="priorityInput">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="field-group">
+        <label>Tags (comma separated)</label>
+        <input type="text" id="tagsInput" placeholder="work, urgent">
+      </div>
+      <button class="btn-primary" id="addUpdateBtn">+ Add Task</button>
+      <div class="error-message" id="formError"></div>
+    </div>
+
+    <!-- filter & search & export -->
+    <div class="filter-bar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search by title...">
+        <span>Search</span>
+      </div>
+      <select class="filter-select" id="filterSelect">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+      <button class="export-btn" id="exportBtn">Export JSON</button>
+    </div>
+
+    <!-- tasks grid -->
+    <div id="tasksGrid" class="tasks-grid"></div>
+
+    <!-- footer with counts and reset -->
+    <hr>
+    <div class="footer-info">
+      <span id="taskCounter">0 tasks</span>
+      <button class="clear-storage" id="clearAllBtn">Clear all</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
