@@ -25,7 +25,7 @@ A clean, fully responsive task management web application built with HTML, CSS, 
 
 - HTML5 (semantic tags)
 - CSS3 (Flexbox/Grid, custom properties for theming)
-- Vanilla JavaScript (ES6+)
+- JavaScript (ES6+)
 - LocalStorage API
 - No external frameworks or libraries
 
